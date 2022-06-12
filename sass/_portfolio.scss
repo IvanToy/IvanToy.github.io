@@ -1,0 +1,108 @@
+.projects {
+  background-color: #778899;
+  box-shadow: 0 0.5rem 1.7rem -2px gray;
+  scroll-margin-top: 4rem;
+
+  &__title {
+    font-size: $title-font;
+    text-align: center;
+    color: #b1bbc5;
+    margin-bottom: 1rem;
+  }
+
+  &__hr {
+    width: 73%;
+    margin: 0 auto;
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    gap: 3.5rem;
+    justify-content: center;
+    align-content: center;
+
+    text-align: center;
+
+    &-video {
+      box-shadow: 0 0.4rem 0.3rem;
+      border-radius: 5px;
+      transition: all 0.3s ease-out;
+    }
+
+    &-item {
+      &-title {
+        font-size: 2rem;
+        color: #ced5db;
+        margin: 1.5rem;
+        transition: all 0.3s ease-out;
+      }
+
+      &-description {
+        font-size: 1.4rem;
+        color: #ced5db;
+        margin: 1.5rem;
+      }
+
+      &-1 {
+        &:hover h5 {
+          color: #eceef0;
+          transform: scale(1.1);
+        }
+        &:hover {
+          cursor: pointer;
+        }
+
+        &:hover video {
+          transform: scale(1.1);
+          box-shadow: 0 0.7rem 2rem;
+        }
+      }
+      &-2 {
+        &:hover h5 {
+          color: #eceef0;
+          transform: scale(1.1);
+        }
+        &:hover {
+          cursor: pointer;
+        }
+        &:hover video {
+          transform: scale(1.1);
+          box-shadow: 0 0.7rem 2rem;
+        }
+      }
+
+      &-3 {
+        &:hover h5 {
+          color: #eceef0;
+          transform: scale(1.1);
+        }
+        &:hover {
+          cursor: pointer;
+        }
+        &:hover video {
+          transform: scale(1.1);
+          box-shadow: 0 0.7rem 2rem;
+        }
+      }
+      &-4 {
+        &:hover h5 {
+          color: #eceef0;
+          transform: scale(1.1);
+        }
+        &:hover {
+          cursor: pointer;
+        }
+        &:hover video {
+          transform: scale(1.1);
+          box-shadow: 0 0.7rem 2rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 48em) {
+    &__container {
+      grid-template-columns: min-content;
+    }
+  }
+}

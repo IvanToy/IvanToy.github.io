@@ -1,0 +1,81 @@
+.contacts {
+  background-color: #696969;
+  grid-column: 1 / -1;
+
+  &__container {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  &__container-email {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    margin-right: 2rem;
+
+    &-address {
+      color: #a9a9a9;
+    }
+  }
+  &__container-email-image:before {
+    content: "\2709";
+    font-size: 5rem;
+    margin-right: 0.5rem;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: $title-font;
+    margin: 2rem 0;
+    color: #484646;
+  }
+
+  &__hr {
+    width: 73%;
+    margin: 0 auto;
+  }
+
+  &__github {
+    display: flex;
+    text-decoration: none;
+    color: #a9a9a9;
+    font-size: 2rem;
+    align-items: center;
+
+    &-icon {
+      margin-right: 0.5rem;
+    }
+    &-text {
+      position: relative;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 2px;
+        margin-top: 2px;
+        right: 0;
+        background-color: #a9a9a9;
+        transition: width 0.2s ease;
+      }
+      &:hover::after {
+        width: 100%;
+        left: 0;
+        background-color: #a9a9a9;
+      }
+    }
+  }
+
+  @media screen and (max-width: 34em) {
+    &__container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__github {
+      margin-bottom: 1rem;
+    }
+  }
+}

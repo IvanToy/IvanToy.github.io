@@ -1,0 +1,27 @@
+.about {
+  width: 90%;
+  margin: auto;
+  scroll-margin-top: 4rem;
+  &__title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__description {
+    font-size: 1.5rem;
+    max-width: 60%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  &__photo {
+    height: 25rem;
+    clip-path: circle();
+  }
+
+  @media screen and (max-width: 34em) {
+    &__description {
+      max-width: 100%;
+    }
+  }
+}

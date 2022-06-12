@@ -1,0 +1,32 @@
+.header {
+  grid-row: 2 / 3;
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url("../images/code.jpeg");
+  background-size: cover;
+
+  &__container {
+    width: 70%;
+    text-align: center;
+    color: $header-color;
+  }
+
+  &__title {
+    font-size: 5rem;
+  }
+
+  &__description {
+    font-size: 2rem;
+  }
+
+  &__line {
+    border-color: #36454f;
+  }
+}

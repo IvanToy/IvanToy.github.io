@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/3a74b3f509.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/main.css" />
+    <title>My portfolio</title>
+  </head>
+  <body class="container" id="home">
+    <nav class="navigation">
+      <div class="navigation__header">
+        <a class="navigation__link" href="#">Ivan Toymentsev </a>
+      </div>
+      <input type="checkbox" id="btnControl" class="navigation__checkbox" />
+      <label class="navigation__collapse" for="btnControl">
+        <i class="fas fa-bars navigation__bars"></i>
+        <i class="fas fa-times navigation__xmark"></i>
+      </label>
+      <div class="navigation__menu">
+        <ul class="navigation__list">
+          <li class="navigation__list-item">
+            <a href="#home" class="navigation__list-item-link">Home</a>
+          </li>
+          <li class="navigation__list-item">
+            <a href="#about" class="navigation__list-item-link">About me</a>
+          </li>
+          <li class="navigation__list-item">
+            <a href="#projects" class="navigation__list-item-link">Projects</a>
+          </li>
+          <li class="navigation__list-item">
+            <a href="#technologies" class="navigation__list-item-link"
+              >Technologies</a
+            >
+          </li>
+          <li class="navigation__list-item">
+            <a href="#contacts" class="navigation__list-item-link">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="header__image"></div>
+      <div class="header__container">
+        <h1 class="header__title">Hi! I'm Ivan!</h1>
+        <hr class="header__line" />
+        <h3 class="header__description">I'm a Developer</h3>
+      </div>
+    </header>
+    <main class="main">
+      <section id="about" class="about">
+        <div class="about__container">
+          <h3 class="about__title">About Me</h3>
+          <hr />
+          <p class="about__description">
+            My name is Ivan Toymentsev. I am a highly motivated self-taught
+            developer who loves to solve challenging problems and learn new
+            technologies. I am very excited to put the skills I have learned
+            into use in an industry role and learn new things in the process.
+          </p>
+          <img
+            class="about__photo"
+            src="./images/me.jpg"
+            alt="photo of Ivan Toymentsev"
+          />
+        </div>
+      </section>
+      <section id="projects" class="projects">
+        <div>
+          <h1 class="projects__title">Portfolio</h1>
+          <hr class="projects__hr" />
+        </div>
+        <div class="projects__container">
+          <div class="projects__container-item-1">
+            <h5 class="projects__container-item-title">
+              Ebay Label Search Automation
+            </h5>
+            <video
+              width="300px"
+              type="video/webm"
+              poster="./images/ebay_label_automation.png"
+              controls
+              muted
+              class="projects__container-video"
+            >
+              <source src="./video/ebay_label_automation.webm" />
+            </video>
+            <p class="projects__container-item-description">
+              An Application that allows you to search for SKU labels on eBay.
+              Built with Electron.js/Puppeteer.js/Node.js.
+            </p>
+          </div>
+          <div class="projects__container-item-2">
+            <h5 class="projects__container-item-title">
+              Gold Price Calculator
+            </h5>
+            <video
+              width="300px"
+              type="video/webm"
+              poster="./images/gold_price_calculator.png"
+              controls
+              muted
+              class="projects__container-video"
+            >
+              <source src="./video/gold_price_calculator.webm" />
+            </video>
+            <p class="projects__container-item-description">
+              A calculator that calculates the gold price for pawning or
+              selling. Built with Electron.js.
+            </p>
+          </div>
+          <div class="projects__container-item-3">
+            <h5 class="projects__container-item-title">
+              Ebay price comparison
+            </h5>
+            <video
+              width="300px"
+              type="video/webm"
+              poster="./images/price_comparison.png"
+              controls
+              muted
+              class="projects__container-video"
+            >
+              <source src="./video/price_comparsion.webm" />
+            </video>
+            <p class="projects__container-item-description">
+              A Web application that finds the lowest and the highest price
+              among the first 300 listings. Built with
+              React.js/Node.js/Express.js/MongoDB/Cheerio.js/Puppeteer.js.
+            </p>
+          </div>
+          <div class="projects__container-item-4">
+            <h5 class="projects__container-item-title">
+              Ebay Listing Automation
+            </h5>
+            <video
+              width="300px"
+              type="video/webm"
+              poster="./images/ebay_listing_automation.png"
+              controls
+              muted
+              class="projects__container-video"
+            >
+              <source src="./video/ebay_listing_automation.webm" />
+            </video>
+            <p class="projects__container-item-description">
+              An application that lists glasses on eBay using automation. Built
+              with Electron.js/Puppeteer.js/Node.js.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="technologies" class="technologies">
+        <h5 class="technologies__title">Technologies</h5>
+        <hr class="technologies__hr" />
+        <div class="technologies__container-photos">
+          <img
+            class="technologies__photo-1"
+            src="./images/html5-css-js-logo.png"
+            alt="html5-css-js logo"
+          />
+          <img
+            class="technologies__photo-2"
+            src="./images/node.png"
+            alt="html5-css-js logo"
+          />
+
+          <img
+            class="technologies__photo-3"
+            src="./images/React-icon.svg.png"
+            alt="React.js logo"
+          />
+          <img
+            class="technologies__photo-4"
+            src="./images/puppeteer-logo.png"
+            alt="Puppeteer.js logo"
+          />
+          <img
+            class="technologies__photo-5"
+            src="./images/Electron.png"
+            alt="Electron.js logo"
+          />
+          <img
+            class="technologies__photo-6"
+            src="./images/express.png"
+            alt="Express.js logo"
+          />
+          <img
+            class="technologies__photo-7"
+            src="./images/mongodb.png"
+            alt="MongoDB logo"
+          />
+        </div>
+      </section>
+    </main>
+    <footer id="contacts" class="contacts">
+      <h5 class="contacts__title">Contacts</h5>
+      <hr class="contacts__hr" />
+      <div class="contacts__container">
+        <div class="contacts__container-email">
+          <span class="contacts__container-email-image"></span>
+          <span class="contacts__container-email-address"
+            >toymencev00@gmail.com</span
+          >
+        </div>
+        <a
+          class="contacts__github"
+          target="_blank"
+          href="https://github.com/IvanToy"
+        >
+          <img
+            src="./images/githubicon.png"
+            alt="github icon"
+            width="30rem"
+            class="contacts__github-icon"
+          />
+          <span class="contacts__github-text"> github.com/IvanToy</span>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

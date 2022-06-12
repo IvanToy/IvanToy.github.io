@@ -1,0 +1,50 @@
+$nav-color: #171616;
+$nav-link-color: #847e7e;
+$nav-link-color-hover: #ffff;
+$body-margin-color: #e2d2d2;
+$header-color: #282f34;
+
+$title-font: 4rem;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background-color: $body-margin-color;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", "Roboto", sans-serif;
+  margin: 0.4rem;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: min-content 92vh repeat(2, min-content);
+  grid-template-columns: repeat(12, 1fr);
+  scroll-margin-top: 4rem;
+}
+
+@media screen and (max-width: 34em) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    margin: 0rem;
+  }
+}
+
+@media screen and (max-width: 20em) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
